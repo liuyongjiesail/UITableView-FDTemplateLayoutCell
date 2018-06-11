@@ -70,6 +70,11 @@
 ///
 - (CGFloat)fd_heightForCellWithIdentifier:(NSString *)identifier cacheByKey:(id<NSCopying>)key configuration:(void (^)(id cell))configuration;
 
+/// Returns height of cell
+/// The cell need fill data before this method call
+///
+- (CGFloat)fd_systemFittingHeightForConfiguratedCell:(UITableViewCell *)cell;
+
 @end
 
 @interface UITableView (FDTemplateLayoutHeaderFooterView)
